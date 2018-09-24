@@ -6,7 +6,7 @@
 <?php
 // levelid, descargas, likes
 // Datos
-include "conx.php";
+include "../conx.php";
 
 // Crear conexión
 $conn = mysqli_connect($servername, $username, $pw, $dbname);

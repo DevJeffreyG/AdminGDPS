@@ -10,7 +10,7 @@
     2 - Y luego dice "Eliminado correctamente de 'accounts'" la cuenta fue eliminada de la tabla "accounts". 8) <br>
     ------------------------------------------------------ <br><br>
 <?php
-include "conx.php";
+include "../conx.php";
 $accountid = $_POST["accountid"];
 
 // Crear conexión
