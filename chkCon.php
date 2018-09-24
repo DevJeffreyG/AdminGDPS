@@ -11,6 +11,6 @@ if ($conn->connect_error) {
 }
 ?>
 <?php
-require "../version/ver.php";
+require "./version/ver.php";
 echo $version;
 ?>
