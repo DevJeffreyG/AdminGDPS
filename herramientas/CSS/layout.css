@@ -1,0 +1,43 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: #e6e6e6;
+}
+
+header, .main, footer {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.main .articles {
+	width: 68.5%;
+	float:left;
+	margin-right: 1.5%;
+}
+
+aside {
+	width: 30%;
+	background: #fff;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.main .articles article {
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+footer {
+	background: #000;
+	color:#fff;
+	clear:both;
+	padding: 10px 0px;
+	text-align: center;
+}

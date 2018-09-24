@@ -1,0 +1,61 @@
+form {
+	width: 60%;
+	border: 1px solid #000;
+	margin: 20px;
+	padding: 20px;
+}
+
+label {
+	font-size: 15px;
+	display: block;
+	width: 100;
+}
+
+textarea {
+	resize:vertical;
+	max-height: 300px;
+	min-height: 100px;
+}
+
+
+input, textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid;
+}
+
+.noticia {
+	border: 5px solid;
+	padding: 10px;
+}
+
+.cyf {
+	width: 34%;
+	border: 5px solid;
+	padding: 20px;
+}
+
+.info {
+	border: 5px solid;
+	padding: 30px;
+}
+
+.img {
+	border: 5px solid;
+}
+
+input[type="submit"] {
+	margin-bottom:0;
+	background: #1668C4;
+	color: #fff;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: #4A88F4;
+	cursor: pointer;
+}
