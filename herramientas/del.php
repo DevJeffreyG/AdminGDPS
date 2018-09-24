@@ -10,7 +10,7 @@
 </head>
 <body>
 	<center><h1>ELIMINAR MOD</h1>
-	<h1><a href="herr.html">Otra</a> herramienta?</h1>
+	<h1><a href="herr.php">Otra</a> herramienta?</h1>
 	<form action="delMod.php" method="post">
 		Assign ID:<br>
 		<input type="text" name="assignid"><br>

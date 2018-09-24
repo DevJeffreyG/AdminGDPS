@@ -10,7 +10,7 @@
 </head>
 <body>
 	<center><h1>AÑADIR MOD</h1>
-	<h1><a href="herr.html">Otra</a> herramienta?</h1>
+	<h1><a href="herr.php">Otra</a> herramienta?</h1>
 	<form action="añMod.php" method="post">
 		Role ID:<br>
 		<input type="text" name="roleid"><br>
