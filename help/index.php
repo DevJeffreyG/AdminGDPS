@@ -8,7 +8,7 @@
 	<a href="accs.php">Cuentas</a><br>
 	<a href="assId.php">AssignID</a><br>
 	<a href="mods.php">Moderadores</a><br>
-	<a href="roleid.html">Roles</a><br>
+	<a href="roleid.php">Roles</a><br>
 	<a href="lvls.php">Niveles</a><br>
 	<a href="users.php">Usuarios</a><br><br>
 	<a href="../herramientas/herr.php">Herramientas</a>
