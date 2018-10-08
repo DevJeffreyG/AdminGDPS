@@ -16,4 +16,4 @@ Intenté que fuera lo más sencillo posible para cualquiera. A continuación te 
 3. Para verificar que los datos sean correctos y que sí está conectada la db (base de datos) a la página web, entra al archivo chkCon.php **Desde el navegador.**
 4. Elimina el archivo `index.html` **NO** Elimines `index.php`.
 5. Entra a `index.php` y disfruta. 🙂 <br><br>
-*Sólo es compatible con los archivos de [GDPS Cvolton](https://github.com/Cvolton/GMDprivateServer)
+*Sólo es compatible con los archivos de [GDPS Cvolton](https://github.com/Cvolton/GMDprivateServer)*
