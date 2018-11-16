@@ -16,6 +16,6 @@ Intenté que fuera lo más sencillo posible para cualquiera. A continuación te 
 1. Ve al archivo `conx.php` y cambia los datos a los de la database de tu GDPS. Y además la contraseña secreta. 🤫<br>
 2. Luego de que tengas los datos listos, sube el archivo actualizado a la página web. <br>
 3. Para verificar que los datos sean correctos y que sí está conectada la db (base de datos) a la página web, entra al archivo chkCon.php **Desde el navegador.**
-4. Elimina el archivo `index.html` **NO** Elimines `index.php`.
+4. Elimina el archivo `index.html` y `en.html` **NO** Elimines `index.php`.
 5. Entra a `index.php` y disfruta. 🙂 <br><br>
 *Sólo es compatible con los archivos de [GDPS Cvolton](https://github.com/Cvolton/GMDprivateServer)*
