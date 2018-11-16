@@ -5,25 +5,28 @@
     <title></title>
   </head>
   <body>
-    <h1>AYUDA</h1>
-    1 - Si dice "¡Conectado Correctamente!" significa que estas conectado a la base de <br>
-    2 - Y luego dice "Eliminado correctamente de 'accounts'" la cuenta fue eliminada de la tabla "accounts". 8) <br>
-    ------------------------------------------------------ <br><br>
-<?php
-include "../conx.php";
+  <?php
+    include "../conx.php";
+    include "../langc/lang$lang.php";
+    echo '<h1>'.$bigHelp.'</h1>
+    1 - '.$siDice.'<br>
+    2 - '.$yLuegoDiceDelFromAccs.'<br>
+    3 - '.$yLuegoDiceDelFromUsers.'<br>
+    ------------------------------------------------------ <br><br>';
+
 $accountid = $_POST["accountid"];
 
 // Crear conexión
 $conn = mysqli_connect($servername, $username, $pw, $dbname);
 // Verificar conexión
 if (!$conn) {
-    die("No conectado... " . mysqli_connect_error());
+    die($badCon . mysqli_connect_error());
 }else{
-	echo "¡Conectado correctamente!<br>";
+	echo $goodCon;
 }
 
 if($_POST['password'] != $seguro){
-  echo "¡Contraseña de seguridad incorrecta! ¯\_(ツ)_/¯";
+  echo $incPass;
   mysqli_close($conn);
   die;
   return;
@@ -33,17 +36,17 @@ if($_POST['password'] != $seguro){
 $sql = "DELETE FROM accounts WHERE accountID='$accountid'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Eliminado correctamente de 'accounts'. <br>";
+    echo $delFromAccs.'<br>';
 } else {
-    echo "Error eliminando: " . mysqli_error($conn);
+    echo "Error: " . mysqli_error($conn);
 }
 
 $sql2 = "DELETE FROM users WHERE extID='$accountid'";
 
 if (mysqli_query($conn, $sql2)) {
-    echo "Eliminado correctamente de 'users'. <br>";
+    echo $delFromUsers.'<br>';
 } else {
-    echo "Error eliminando: " . mysqli_error($conn);
+    echo "Error: " . mysqli_error($conn);
 }
 
 mysqli_close($conn);

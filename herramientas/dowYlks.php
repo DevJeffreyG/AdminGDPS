@@ -1,31 +1,33 @@
-<!DOCTYPE html>
+<?php
+include "../conx.php";
+include "../langc/lang$lang.php";
+require "../version/ver.php";
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ACTUALIZAR DESCARGAS</title>
+	<title>'.$hrUpdDaL.'</title>
 	<link rel="stylesheet" href="CSS/estilos.css">
 	<link rel="stylesheet" href="CSS/layout.css">
 	<link rel="stylesheet" href="CSS/desplegable.css">
 	<link rel="stylesheet" href="CSS/fonts.css">
 </head>
 <body>
-	<center><h1>ACTUALIZAR DESCARGAS Y LIKES</h1>
-	<h1><a href="herr.php">Otra</a> herramienta?</h1>
+	<center><h1>'.$hrUpdDaL.'</h1>
+	'.$otherHrr.'
 	<form action="updtDown.php" method="post">
-		levelID: <br>
+		'.$levelID.' <br>
 		<input type="text" name="levelid"><br>
-		Descargas deseadas: <br>
+		'.$downloads.' <br>
 		<input type="text" name="descargas"><br>
-		Likes deseados: <br>
+		'.$likes.' <br>
 		<input type="text" name="likes"><br>
-		Contraseña de seguridad: <br>
+		'.$askPass.' <br>
 		<input type="password" name="password"><br><br>
-		<input type="submit" value="Actualizar descargas"><br><br>
-		<a href="../help/index.php">Ayuda</a>...
+		<input type="submit" value="'.$hrUpdDaL.'"><br><br>
+		<a href="../help/index.php">'.$help.'</a>...
 	</form></center>
-	<?php
-	require "../version/ver.php";
-	echo $version;
-	?>
+	'.$version.'
 </body>
-</html>
+</html>';
+?>

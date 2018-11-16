@@ -1,27 +1,29 @@
-<!DOCTYPE html>
+<?php
+include "../conx.php";
+include "../langc/lang$lang.php";
+require "../version/ver.php";
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ELIMINAR CUENTA</title>
+	<title>'.$hrDelAcc.'</title>	
 	<link rel="stylesheet" href="CSS/estilos.css">
 	<link rel="stylesheet" href="CSS/layout.css">
 	<link rel="stylesheet" href="CSS/desplegable.css">
 	<link rel="stylesheet" href="CSS/fonts.css">
 </head>
 <body>
-	<center><h1>ELIMINAR CUENTA</h1>
-	<h1><a href="herr.php">Otra</a> herramienta?</h1>
+	<center><h1>'.$hrDelAcc.'</h1>
+	'.$otherHrr.'
 	<form action="delAcc.php" method="post">
-		AccountID: <br>
+		'.$accountID.' <br>
 		<input type="text" name="accountid"><br>
-		Contraseña de seguridad: <br>
+		'.$askPass.' <br>
 		<input type="password" name="password"><br><br>
-		<input type="submit" value="ELIMINAR CUENTA"><br><br>
-		<a href="../help/index.php">Ayuda</a>...
-	</form></center>
-	<?php
-	require "../version/ver.php";
-	echo $version;
-	?>
+		<input type="submit" value="'.$hrDelAcc.'"><br><br>
+		<a href="../help/index.php">'.$help.'</a>...
+	</form></center>'.
+	$version.'
 </body>
-</html>
+</html>'
+?>

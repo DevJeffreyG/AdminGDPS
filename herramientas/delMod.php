@@ -1,6 +1,11 @@
-<h1>AYUDA</h1>
-1 - Si dice "¡Conectado Correctamente!" significa que estas conectado a la base de <br>
-2 - Y luego dice "¡Mod eliminado correctamente!" significa rip mod. <br>
+<?php
+    include "../conx.php";
+    include "../langc/lang$lang.php";
+echo '<h1>'.$bigHelp.'</h1>';
+<?php
+echo '1 - '.$siDice.'<br>';
+echo '2 - '.$yLuegoDiceDelMod.'<br>';
+?>
 ------------------------------------------------------ <br><br>
 <?php
 // assignid
@@ -11,13 +16,13 @@ include "../conx.php";
 $conn = mysqli_connect($servername, $username, $pw, $dbname);
 // Verificar conexión
 if (!$conn) {
-    die("No conectado... " . mysqli_connect_error());
+    die($badCon . mysqli_connect_error());
 }else{
-	echo "¡Conectado Correctamente!<br>";
+	echo $goodCon;
 }
 
 if($_POST['password'] != $seguro){
-  echo "¡Contraseña de seguridad incorrecta! ¯\_(ツ)_/¯";
+  echo $incPass;
   mysqli_close($conn);
   die;
   return;
@@ -27,7 +32,7 @@ if($_POST['password'] != $seguro){
 $sql = "DELETE FROM roleassign WHERE assignID='$_POST[assignid]'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "¡Mod eliminado correctamente!";
+    echo $delMod;
 } else {
     echo "Error: " . mysqli_error($conn);
 }

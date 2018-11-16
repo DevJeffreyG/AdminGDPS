@@ -1,24 +1,25 @@
-<h1>AYUDA</h1>
-1 - Si dice "¡Conectado Correctamente!" significa que estas conectado a la base de <br>
-2 - Y luego dice "¡Descargas actualizadas!" las descargas se cambiaron. 8) <br>
-3 - y luego dice "¡Likes actualizados!" las descargas se cambiaron. 8) <br>
------------------------------------------------------- <br><br>
 <?php
-// levelid, descargas, likes
-// Datos
-include "../conx.php";
+	// Datos
+	include "../conx.php";
+    include "../langc/lang$lang.php";
+    
+echo '<h1>'.$bigHelp.'</h1>
+1 - '.$siDice.'<br>
+2 -  '.$yLuegoDiceDownsUpd.'<br>
+3 -  '.$yLuegoDiceLikesUpd.'<br>
+------------------------------------------------------ <br><br>';
 
 // Crear conexión
 $conn = mysqli_connect($servername, $username, $pw, $dbname);
 // Verificar conexión
 if (!$conn) {
-    die("No conectado... " . mysqli_connect_error());
+    die($badCon . mysqli_connect_error());
 }else{
-	echo "¡Conectado Correctamente!<br>";
+	echo $goodCon;
 }
 
 if($_POST['password'] != $seguro){
-  echo "¡Contraseña de seguridad incorrecta! ¯\_(ツ)_/¯";
+  echo $incPas;
   mysqli_close($conn);
   die;
   return;
@@ -28,7 +29,7 @@ if($_POST['password'] != $seguro){
 $sql = "UPDATE levels SET downloads='$_POST[descargas]' WHERE levelID='$_POST[levelid]'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "¡Descargas actualizadas! <br>";
+    echo $downsUpd.'<br>';
 } else {
     echo "Error: " . mysqli_error($conn);
 }
@@ -36,7 +37,7 @@ if (mysqli_query($conn, $sql)) {
 $sql = "UPDATE levels SET likes='$_POST[likes]' WHERE levelID='$_POST[levelid]'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "¡Likes actualizados! <br>";
+    echo $likesUpd.'<br>';
 } else {
     echo "Error: " . mysqli_error($conn);
 }
