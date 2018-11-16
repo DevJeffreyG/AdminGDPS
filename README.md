@@ -8,7 +8,7 @@ Sólo con agregar estos archivos a tu Geometry Dash Private Server tendrás cont
   * Esto para que todas las funciones de [herramientas](./herramientas) estén disponibles. (Quests, Gauntlets [COMING SOON])
 
 # Set Up
-* Now with [**english**](en.html) language support!
+* Now with [**english**](EN_README.md) language support!
 
 ¡Hola! Te saluda JeffreyG / JeffreyGMD. ¡Gracias por descargar este administrador de GDPS!<br>
 Intenté que fuera lo más sencillo posible para cualquiera. A continuación te diré lo primero que debes hacer para que esto empieze a funcionar. <br><br>
