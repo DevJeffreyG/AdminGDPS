@@ -1,6 +1,6 @@
 ### Pre-requisitos
 
-* [ ] Put an X between the brackets on this line if you have done all of the following:
+* [ ] Coloque una X entre los paréntesis en esta línea si ha hecho todo lo siguiente:
     * Revisado las instrucciones de README (https://github.com/JeffreyRandom/AdminGDPS/blob/master/README.md).
     * Revisado que tu problema / bug no ha sido reportado antes (https://github.com/JeffreyRandom/AdminGDPS/issues?utf8=✓&q=).
 
