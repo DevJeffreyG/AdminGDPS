@@ -1,7 +1,7 @@
 # AdminGDPS
 Only with adding these files to your Geometry Dash Private Server will you have control over the accounts and moderators of your server.
 
-# Requisitos
+# Requirements
 * Have a Geometry Dash Private Server.
   * The files must be those of [Cvolton](https://github.com/Cvolton/GMDprivateServer).
 * GDPS Version +2.1
