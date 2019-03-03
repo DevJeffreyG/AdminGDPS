@@ -60,7 +60,7 @@ $nombreDelRango = 'Nombre del rango';
 // ¿Que pasó?
 $delMod = '¡Mod eliminado correctamente!';
 $addMod = '¡Mod añadido correctamente!';
-$UpdMod = '¡Mod actualizado correctamente!';
+$updMod = '¡Mod actualizado correctamente!';
 $delFromAccs = 'Eliminado correctamente de <i>accounts</i>.';
 $delFromUsers = 'Eliminado correctamente de <i>users</i>.';
 $downsUpd = '¡Descargas actualizadas!';
