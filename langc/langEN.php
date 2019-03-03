@@ -59,7 +59,7 @@ $nombreDelRango = 'Role name';
 // ¿Que pasó?
 $delMod = 'Mod removed correctly!';
 $addMod = 'Mod added correctly!';
-$UpdMod = 'Mod updated correctly!';
+$updMod = 'Mod updated correctly!';
 $delFromAccs = 'Deleted correctly from <i>accounts</i>.';
 $delFromUsers = 'Deleted correctly from <i>users</i>.';
 $downsUpd = 'Downloads updated!';
