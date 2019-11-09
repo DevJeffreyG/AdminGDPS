@@ -16,7 +16,7 @@ echo '<!DOCTYPE html>
 <body>
 	'.$doHeader.'
 	<center><h1>'.$hrUpdDaL.'</h1>
-	<form action="updtDown.php" method="post">
+	<form action="actions/updtDown.php" method="post">
 		'.$levelID.' <br>
 		<input type="text" name="levelid"><br>
 		'.$downloads.' <br>

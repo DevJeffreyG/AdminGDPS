@@ -16,7 +16,7 @@ echo '<!DOCTYPE html>
 <body>
 	'.$doHeader.'
 	<center><h1>'.$hrDelAcc.'</h1>
-	<form action="delAcc.php" method="post">
+	<form action="actions/delAcc.php" method="post">
 		'.$accountID.' <br>
 		<input type="text" name="accountid"><br>
 		'.$askPass.' <br>

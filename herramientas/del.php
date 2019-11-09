@@ -16,7 +16,7 @@ echo '<!DOCTYPE html>
 <body>
 	'.$doHeader.'
 	<center><h1>'.$hrDelMod.'</h1>
-	<form action="delMod.php" method="post">
+	<form action="actions/delMod.php" method="post">
 		'.$assignID.'<br>
 		<input type="text" name="assignid"><br>
 		'.$askPass.' <br>
