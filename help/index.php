@@ -1,23 +1,28 @@
 <?php
 include "../conx.php";
+include "../header.php";
 include "../langc/lang$lang.php";
 require "../version/ver.php";
 echo '<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>'.$bigHelp.' - '.$bigHome.'</title>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="../CSS/estilos.css">
+	<link rel="stylesheet" href="../CSS/layout.css">
+	<link rel="stylesheet" href="../CSS/fonts.css">
 </head>
 <body>
-	<a href="accs.php">'.$cuentas.'</a><br>
-	<a href="assId.php">'.$assigns.'</a><br>
-	<a href="mods.php">'.$moderators.'</a><br>
-	<a href="roleid.php">'.$roles.'</a><br>
-	<a href="lvls.php">'.$levels.'</a><br>
-	<a href="users.php">'.$users.'</a><br><br>
-	<a href="../herramientas/herr.php">'.$otherHerrs.'</a>
-	'.$version.'
-
+	'.$doHeader.'
+    <font size="6">
+    <center><form>
+      <h1>Bienvenido</h1><br>
+		Estás en la página principal de ayuda / información.<br>
+		Arriba tienes una barra en donde puedes buscar la herramienta que necesites, o la información de cuentas, mods, IDs, lo que necesites.
+	</form></font>
+	'.
+	$reportBug.
+	$version.'</center>
 </body>
 </html>';
 ?>

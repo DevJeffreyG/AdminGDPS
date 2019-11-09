@@ -1,115 +1,124 @@
 * {
-	margin:0;
-	padding: 0;
+    margin:0;
+    padding: 0;
 }
 
-
 header {
-    margin-top:10px;
+    margin-top:10px; /*Simplemente agregamos un margen*/
     width: 100%;
-    height: 150px;
-    overflow: hidden;
-    position: relative;
+    height: 150px; /*Le damos un alto fijo al menu*/
+    overflow: hidden; /*Agregamos un overflow hidden para que no se muestren elementos que sobrepasen los 150px de alto*/
+    position: relative; /*Convertimos el menu en posición relativa porque mas adelante en el header > nav pondremos una posición absoluta*/
 }
 
 nav {
-    top:-20px;
-    position: absolute;
-    left:0;
+    top:-20px; /*Le damos una separación superior*/
+    position: absolute; /*Convertimos el contenedor en posición absoluta*/
+    left:0; /*Con left:0; y right:0; centramos el contenedor*/
     right:0;
+ 
     margin:20px auto;
     max-width:1000px;
     width:90%;
 }
 
+nav ul {
+    list-style: none;
+}
+
 nav > ul {
-    display:table;
-    width:100%;
-    background:#000;
+    display: table;
+    /*overflow: hidden;*/
+    width: 100%;
+    background: black;
     position: relative;
 }
 
-/*Sub-menus*/
+
+nav > ul li {
+    display: table-cell;
+}
+
+/* sub menus */
 
 nav > ul > li:hover > ul {
-	display: block;
-	height: 100%;
+    display: block;
+    height: 100%;
 }
 
 nav > ul > li > ul {
-	display: block;
-	position: absolute;
-	background: #000;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	height: 0%;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
-
+    display: block;
+    position: absolute;
+    background: black;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-
-nav > ul li {
-	display: table-cell;
-}
-
 
 nav > ul li a {
-	color: #fff;
-	display:block;
-	line-height: 20px;
-	padding: 20px;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+    color: white;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 nav > ul > li > ul > li a:hover {
-	background: #5da5a2;
+    background: #5da5a2;
 }
 
 nav > ul > li > a span {
-	background: #174459;
-	display: block;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	position: absolute;
-	top: -55px;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-nav > ul > li > a span .icon {
-	display: block;
-	line-height: 60px;
+nav > ul > li > a span .icon{
+    display: block;
+    line-height: 60px;
 }
 
 nav > ul > li > a:hover > span {
-	top: 0;
+    top: 0px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-/*Colores*/
+/* colores */
+
 nav ul li a .primero {
-	background: #0e5061;
+    background: #0e5061;
 }
 
 nav ul li a .segundo {
-	background: #5da5a2;
+    background: #5da5a2;
 }
-
-nav ul li a .tercero {
-	background: #f25724;
-}
-

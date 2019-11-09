@@ -1,6 +1,7 @@
 <?php
 // Soporte
 $otherHerrs = 'Herramientas';
+$information = 'Información';
 $help = 'Ayuda';
 $bigHelp = 'AYUDA';
 $home = 'Inicio';
@@ -8,11 +9,11 @@ $bigHome = 'INICIO';
 $reportBug = '<center><i>Si hay algún fallo, no dudes en <a href="https://github.com/JeffreyRandom/AdminGDPS/issues/new" target="_blank">reportarlo</a></i>!</center>';
 
 // Herramientas
-$hrAddMod = 'AÑADIR MOD';
-$hrUpdMod = 'ACTUALIZAR MOD';
-$hrDelMod = 'ELIMINAR MOD';
-$hrDelAcc = 'ELIMINAR CUENTA';
-$hrUpdDaL = 'ACTUALIZAR DESCARGAS Y LIKES';
+$hrAddMod = 'Añadir Mod';
+$hrUpdMod = 'Actualizar Mod';
+$hrDelMod = 'Eliminar Mod';
+$hrDelAcc = 'Eliminar Cuenta';
+$hrUpdDaL = 'Actualizar Descargas y Likes';
 $otherHrr = '<h1>¿<a href="herr.php">Otra</a> herramienta?</h1>';
 
 // Conectando

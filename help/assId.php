@@ -5,10 +5,10 @@ table, th, td {
 </style>
 <?php
 include "../conx.php";
+include "../header.php";
 include "../langc/lang$lang.php";
 require "../version/ver.php";
-echo '<a href="../herramientas/herr.php">'.$otherHerrs.'</a><br>
-<a href="index.php">'.$help.'</a>'.$version;
+echo $doHeader.$version;
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $pw, $dbname);
