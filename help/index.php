@@ -16,10 +16,9 @@ echo '<!DOCTYPE html>
 	'.$doHeader.'
     <font size="6">
     <center><form>
-      <h1>Bienvenido</h1><br>
-		Estás en la página principal de ayuda / información.<br>
-		Arriba tienes una barra en donde puedes buscar la herramienta que necesites, o la información de cuentas, mods, IDs, lo que necesites.
-	</form></font>
+      <h1>'.$welcome.'</h1><br>
+		'.$mainInfo.'	
+	  </form></font>
 	'.
 	$reportBug.
 	$version.'</center>

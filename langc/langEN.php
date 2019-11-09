@@ -1,4 +1,8 @@
 <?php
+// Home
+$welcome = "Welcome"
+$mainTools = "You are on the main page of AdminGDPS.<br>Above you have a navbar where you can find the tool you need, the account information, mods, IDs, whatever you need."
+$mainInfo = "You are on the main help / information page.<br>Above you have a bar where you can find the tool you need, the account information, mods, IDs, whatever you need."
 // Soporte
 $otherHerrs = 'Tools';
 $information = 'Information';
