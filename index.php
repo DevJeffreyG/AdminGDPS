@@ -1,5 +1,5 @@
 <?php
-	header("Location: herramientas/herr.php");
+	header("Location: herramientas/index.php");
 ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
