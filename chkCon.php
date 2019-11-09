@@ -1,8 +1,10 @@
 <?php
-// roleid, accountid
-// Datos
+
+// Datos en conx.php
 include "conx.php";
-include "serv.php";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $pw, $dbname );
 
 if ($conn->connect_error) {
     die("No conectado... " . $conn->connect_error);
