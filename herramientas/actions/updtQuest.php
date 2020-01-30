@@ -44,7 +44,7 @@ switch(strtolower($_POST['type'])){
     break;
 }
 
-$sql = "UPDATE quests SET type= '$type', amount= '$_POST[quantity]', reward= '$_POST[award]', name= '$_POST[name]' WHERE ID= $_POST[id]";
+$sql = "UPDATE quests SET type= '$tipo', amount= '$_POST[quantity]', reward= '$_POST[award]', name= '$_POST[name]' WHERE ID= $_POST[id]";
 
 if (mysqli_query($conn, $sql)) {
     echo $updQuest;
