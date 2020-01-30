@@ -18,7 +18,7 @@
 
 **Lo que pasa:** [Lo que en verdad pasa]
 
-  **Cada cuanto:** [Que porcentaje del tiempo pasa esto]
+**Cada cuanto:** [Que porcentaje del tiempo pasa esto]
 
 ### Información adicional
 
