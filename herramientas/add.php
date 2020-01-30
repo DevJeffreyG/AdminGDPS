@@ -16,7 +16,7 @@ echo '<!DOCTYPE html>
 <body>
 	'.$doHeader.'
 	<center><h1>'.$hrAddMod.'</h1>
-	<form action="actions/añMod.php" method="post">
+	<form action="actions/addMod.php" method="post">
 		'.$roleID.'<br>
 		<input type="text" name="roleid"><br>
 		'.$accountID.'<br>

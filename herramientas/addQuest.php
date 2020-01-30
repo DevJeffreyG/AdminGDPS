@@ -16,7 +16,7 @@ echo '<!DOCTYPE html>
 <body>
 	'.$doHeader.'
 	<center><h1>'.$hrAddQuest.'</h1>
-	<form action="actions/añQuest.php" method="post">
+	<form action="actions/addQuest.php" method="post">
         '.$type.'<a target="_blank" href="'.$root.'/help/types.php"><sup>?</sup></a><br>
 		<input type="text" name="type"><br>
 		'.$quantity.'<br>
