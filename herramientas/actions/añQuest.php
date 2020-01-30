@@ -1,7 +1,7 @@
 <?php
-        // Datos
-        include "../../conx.php";
-        include "../../langc/lang$lang.php";
+// Datos
+include "../../conx.php";
+include "../../langc/lang$lang.php";
 echo '<!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -11,7 +11,7 @@ echo '<!DOCTYPE html>
   <body>
     <h1>'.$bigHelp.'</h1>';
     echo '1 - '.$siDice.'<br>';
-    echo '2 - '.$yLuegoDiceAddMod.'<br>';
+    echo '2 - '.$yLuegoDiceAddQuest.'<br>';
     echo '------------------------------------------------------ <br><br>';
     // roleid, accountid
 
@@ -31,11 +31,34 @@ echo '<!DOCTYPE html>
       return;
     }
 
-    $sql = "INSERT INTO roleassign (roleID, accountID)
-    VALUES ($_POST[roleid] , $_POST[accountid])";
+    $tipo = $_POST['type'];
+
+    switch(strtolower($_POST['type'])){
+        case 1: case "orbs": case "orbes":
+            $tipo = 1;
+        break;
+
+        case 2: case "coins": case "user": case "monedas": case "user coins": case "user coin": case "monedas de usuario":
+            $tipo = 2;
+        break;
+
+        case 3: case "stars": case "estrellas": case "star": case "estrella":
+            $tipo = 3;
+        break;
+
+        default:
+            echo $badType;
+            mysqli_close($conn);
+            die;
+            return;
+        break;
+    }
+
+    $sql = "INSERT INTO quests (ID, type, amount, reward, name)
+    VALUES (NULL, $tipo, $_POST[quantity], $_POST[award], '$_POST[name]')";
 
     if (mysqli_query($conn, $sql)) {
-        echo $addMod;
+        echo $addQuest;
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

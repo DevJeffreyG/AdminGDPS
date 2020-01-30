@@ -1,10 +1,21 @@
 <?php
 // Home
 $welcome = "Bienvenido";
-$mainTools = "Estás en la página principal de AdminGDPS.<br>Arriba tienes una barra en donde puedes buscar la herramienta que necesites, o la información de cuentas, mods, IDs, lo que necesites.";
-$mainInfo = "Estás en la página principal de ayuda / información.<br>Arriba tienes una barra en donde puedes buscar la herramienta que necesites, o la información de cuentas, mods, IDs, lo que necesites.";
+$mainTools = "Estás en la página principal de AdminGDPS.<br>
+Arriba tienes una barra en donde puedes buscar la herramienta que necesites, o la información de cuentas, mods, IDs, lo que necesites.";
+$mainInfo = "Estás en la página principal de ayuda / información.<br>
+Arriba tienes una barra en donde puedes buscar la herramienta que necesites, o la información de cuentas, mods, IDs, lo que necesites.";
+$types = "Las recompensas pueden ser:<br>
+<b>1.</b> Orbes<br>
+<b>2.</b> User coins<br>
+<b>3.</b> Estrellas<br><br>
+
+A la hora de agregar Quests, puedes usar tanto el número como el texto de arriba.";
 // Soporte
 $otherHerrs = 'Herramientas';
+$nvbarMod = 'Moderación';
+$nvbarQuests = 'Quests';
+$nvbarExtras = 'Extras';
 $information = 'Información';
 $help = 'Ayuda';
 $bigHelp = 'AYUDA';
@@ -17,6 +28,9 @@ $hrAddMod = 'Añadir Mod';
 $hrUpdMod = 'Actualizar Mod';
 $hrDelMod = 'Eliminar Mod';
 $hrDelAcc = 'Eliminar Cuenta';
+$hrAddQuest = 'Agregar Quest';
+$hrUpdQuest = 'Actualizar Quest';
+$hrDelQuest = 'Eliminar Quest';
 $hrUpdDaL = 'Actualizar Descargas y Likes';
 $otherHrr = '<h1>¿<a href="herr.php">Otra</a> herramienta?</h1>';
 
@@ -30,6 +44,7 @@ $yLuegoDiceDelFromUsers = 'Y luego dice <b>Eliminado correctamente de <i>users</
 $yLuegoDiceDelFromUsers = 'Y luego dice <b>Eliminado correctamente de <i>users</i></b> la cuenta fue eliminada de la tabla "users".';
 $yLuegoDiceDownsUpd = 'Y luego dice <b>¡Descargas actualizadas!</b> las descargas se cambiaron.';
 $yLuegoDiceLikesUpd = 'Y luego dice <b>¡Likes actualizados!</b> los likes se cambiaron.';
+$yLuegoDiceAddQuest = 'Y luego dice <b>¡Quest añadida correctamente!</b> esta quest será un posibilidad al salir en el juego.';
 
 // Conexión...
 $goodCon = '¡Conectado Correctamente!<br>';
@@ -54,6 +69,11 @@ $roles = 'Roles';
 $levels = 'Niveles';
 $users = 'Usuarios';
 
+$type = "Tipo de quest";
+$quantity = "Cantidad a recolectar";
+$award = "Recompensa en diamantes";
+$questName = "Nombre de la Quest";
+
 // Tablas
 $nombreDeUsuario = 'Nombre de usuario';
 $createdBy = 'Creado por';
@@ -70,7 +90,9 @@ $delFromAccs = 'Eliminado correctamente de <i>accounts</i>.';
 $delFromUsers = 'Eliminado correctamente de <i>users</i>.';
 $downsUpd = '¡Descargas actualizadas!';
 $likesUpd = '¡Likes actualizados!';
+$addQuest = '¡Quest añadida correctamente!';
 
 // Errores
 $ripServers = 'Servidores caídos.';
+$badType = 'Tipo de Quest inválida, intenta usando los números.';
 ?>

@@ -1,6 +1,6 @@
 <?php
-    include "../conx.php";
-    include "../langc/lang$lang.php";
+    include "../../conx.php";
+    include "../../langc/lang$lang.php";
 echo '<h1>'.$bigHelp.'</h1>';
 <?php
 echo '1 - '.$siDice.'<br>';
@@ -40,6 +40,6 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?>
 <?php
-require "../version/ver.php";
+require "../../version/ver.php";
 echo $version;
 ?>
