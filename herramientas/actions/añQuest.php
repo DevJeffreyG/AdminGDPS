@@ -31,8 +31,6 @@ echo '<!DOCTYPE html>
       return;
     }
 
-    $tipo = $_POST['type'];
-
     switch(strtolower($_POST['type'])){
         case 1: case "orbs": case "orbes":
             $tipo = 1;

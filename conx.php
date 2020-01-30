@@ -5,8 +5,8 @@ $username = "root"; // Nombre de usuario de la base de datos / Username's databa
 $pw = ""; // Contraseña de la base de datos / Password's database.
 $dbname = "gdps"; // Nombre de la base de datos / Database name.
 
-$root = "http://localhost/AdminGDPS"; // Link web donde la herramienta AdminGDPS está.
-// ^^ Web link where AdminGDPS tool is located.
+$root = "http://localhost/AdminGDPS"; // Link web donde la herramienta AdminGDPS está. Ejemplo: http://gdpsjeffrey.7m.pl/AdminGDPS
+// ^^ Web link where AdminGDPS tool is located. Example: http://gdpsjeffrey.7m.pl/AdminGDPS
 // ^^^^^^^^^^^^^^ esto se usará para evitar errores al usar la barra de navegación.
 // ^^^^^^^^^^^^^^ this will be used for avoiding errors by using the navbar.
 

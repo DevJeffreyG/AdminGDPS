@@ -45,6 +45,8 @@ $yLuegoDiceDelFromUsers = 'Y luego dice <b>Eliminado correctamente de <i>users</
 $yLuegoDiceDownsUpd = 'Y luego dice <b>¡Descargas actualizadas!</b> las descargas se cambiaron.';
 $yLuegoDiceLikesUpd = 'Y luego dice <b>¡Likes actualizados!</b> los likes se cambiaron.';
 $yLuegoDiceAddQuest = 'Y luego dice <b>¡Quest añadida correctamente!</b> esta quest será un posibilidad al salir en el juego.';
+$yLuegoDiceUpdQuest = 'Y luego dice <b>¡Quest actualizada correctamente!</b> se actualizó la quest.';
+$yLuegoDiceDelQuest = 'Y luego dice <b>¡Quest eliminada correctamente!</b> se borró la quest.';
 
 // Conexión...
 $goodCon = '¡Conectado Correctamente!<br>';
@@ -69,6 +71,7 @@ $roles = 'Roles';
 $levels = 'Niveles';
 $users = 'Usuarios';
 
+$questID = "ID de Quest";
 $type = "Tipo de quest";
 $quantity = "Cantidad a recolectar";
 $award = "Recompensa en diamantes";
@@ -91,6 +94,8 @@ $delFromUsers = 'Eliminado correctamente de <i>users</i>.';
 $downsUpd = '¡Descargas actualizadas!';
 $likesUpd = '¡Likes actualizados!';
 $addQuest = '¡Quest añadida correctamente!';
+$updQuest = '¡Quest actualizada correctamente!';
+$delQuest = '¡Quest eliminada correctamente!';
 
 // Errores
 $ripServers = 'Servidores caídos.';
